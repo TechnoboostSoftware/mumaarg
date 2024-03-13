@@ -372,7 +372,7 @@
                                     <p class="font-normal text-sm text-main">Domain</p>
                                     <img src="../../img/Vector.png" class="dropImg">
                                 </div>
-                                <div class="flex justify-between itmes-center p-3 dontShow hidden" id="domain">
+                                <div class="flex justify-between itmes-center p-3 dontShow " id="domain">
 
                                 </div>
 
@@ -385,7 +385,7 @@
                                     <p class="font-normal text-sm text-main">Experience</p>
                                     <img src="../../img/Vector.png" class="dropImg">
                                 </div>
-                                <div class="flex justify-between itmes-center p-3 dontShow" id="experience">
+                                <div class="flex justify-between itmes-center p-3 dontShow hidden" id="experience">
                                 </div>
 
                             </div>
@@ -448,52 +448,76 @@
                         <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
                             <div class="flex justify-between py-4 px-5 items-center gap-7"
                                 onclick="dropDownAnswer(this)" id="question-1">
-                                <p class="text-base font-semibold text-main">Are the calls free ?</p>
+                                <p class="text-base font-semibold text-main">Is the mentorship program free ?
+                                </p>
                                 <img src="../../img/Plus.svg" class="dropUp">
                                 <img src="../../img/dash.svg" class="dropDown d-none">
                             </div>
                             <div class="d-none body px-5 py-3" id="answer-1">
-                                <p class="text-base font-normal text-main text-justify">Yes, our mentorship calls are
-                                    currently offered as a complimentary service.</p>
+                                <p class="text-base font-normal text-main text-justify">
+                                    Yes, our mentorship program is currently offered as a complimentary service.
+
+                                </p>
                             </div>
                         </div>
                         <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
                             <div class="flex justify-between py-4 px-5 items-center gap-7"
                                 onclick="dropDownAnswer(this)" id="question-2">
-                                <p class="text-base font-semibold text-main">How long is a call ?</p>
+                                <p class="text-base font-semibold text-main"> How long does it take to get matched with
+                                    a mentor ?</p>
                                 <img src="../../img/Plus.svg" class="dropUp">
                                 <img src="../../img/dash.svg" class="dropDown d-none">
                             </div>
                             <div class="d-none body px-5 py-3" id="answer-2">
                                 <p class="text-base font-normal text-main text-justify">
-                                    Each call is scheduled for 30 minutes.
+                                    We aim to match you within 24 hours of submitting your 'Book a Call' form.
                                 </p>
                             </div>
                         </div>
                         <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
                             <div class="flex justify-between py-4 px-5 items-center gap-7"
                                 onclick="dropDownAnswer(this)" id="question-3">
-                                <p class="text-base font-semibold text-main">Where will the call take place ?</p>
+                                <p class="text-base font-semibold text-main">Can I choose my mentor ?
+                                </p>
                                 <img src="../../img/Plus.svg" class="dropUp">
                                 <img src="../../img/dash.svg" class="dropDown d-none">
                             </div>
                             <div class="d-none body px-5 py-3" id="answer-3">
                                 <p class="text-base font-normal text-main text-justify">
-                                    You will receive a Google Meet link in the invite after booking a call.</p>
+                                    We carefully match you with a mentor based on your pre-MBA background for the best
+                                    fit.
+                                </p>
                             </div>
                         </div>
 
                         <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
                             <div class="flex justify-between py-4 px-5 items-center gap-7"
-                                onclick="dropDownAnswer(this)" id="question-3">
-                                <p class="text-base font-semibold text-main">Is my information kept confidential ?</p>
+                                onclick="dropDownAnswer(this)" id="question-4">
+                                <p class="text-base font-semibold text-main">How often can I connect with my mentor ?
+                                </p>
                                 <img src="../../img/Plus.svg" class="dropUp">
                                 <img src="../../img/dash.svg" class="dropDown d-none">
                             </div>
-                            <div class="d-none body px-5 py-3" id="answer-3">
+                            <div class="d-none body px-5 py-3" id="answer-4">
                                 <p class="text-base font-normal text-main text-justify">
-                                    - Absolutely. We prioritize the confidentiality and privacy of your information.
-                                    Rest assured that your details are handled with the utmost care.</p>
+                                    Mentorship sessions are typically scheduled for 30 minutes. Further sessions can be
+                                    arranged based on availability.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col border w-full radius-10 my-2 close rounded-lg bg-white">
+                            <div class="flex justify-between py-4 px-5 items-center gap-7"
+                                onclick="dropDownAnswer(this)" id="question-5">
+                                <p class="text-base font-semibold text-main">Is my information kept confidential ?
+                                </p>
+                                <img src="../../img/Plus.svg" class="dropUp">
+                                <img src="../../img/dash.svg" class="dropDown d-none">
+                            </div>
+                            <div class="d-none body px-5 py-3" id="answer-5">
+                                <p class="text-base font-normal text-main text-justify">
+                                    Yes, we prioritize the confidentiality and privacy of your information. Rest assured
+                                    that your details are handled with utmost care.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -501,6 +525,7 @@
             </div>
 
         </section>
+
 
 
         <!-- ####################################### FOOTER ############################# -->
@@ -524,10 +549,13 @@
                     <p class="text-white text-sm font-normal">Copyright Maarg Mentorship Pvt. Ltd .© 2024.</p>
                 </div>
                 <div class="w-1/2 middleText flex items-center justify-center gap-x-7">
-                    <a href="https://mymaarg.com/privacy-policy" class="text-main text-sm font-normal text-white">Privacy Policy</a>
-                    <a href="https://mymaarg.com/terms-and-condition" class="text-main text-sm font-normal text-white">Terms and
+                    <a href="https://mymaarg.com/privacy-policy"
+                        class="text-main text-sm font-normal text-white">Privacy Policy</a>
+                    <a href="https://mymaarg.com/terms-and-condition"
+                        class="text-main text-sm font-normal text-white">Terms and
                         Conditions</a>
-                    <a href="https://mymaarg.com/fulfilment" class="text-main text-sm font-normal text-white">Fulfilment Policy</a>
+                    <a href="https://mymaarg.com/fulfilment" class="text-main text-sm font-normal text-white">Fulfilment
+                        Policy</a>
                     <a href="https://mymaarg.com/sitemap" class="text-main text-sm font-normal text-white">Sitemap</a>
                 </div>
                 <div class="w-1/3 flex items-center justify-end gap-x-3 py-2">
@@ -561,10 +589,13 @@
             </div>
             <div class="flex flex-col items-start justify-between pb-4">
                 <div class="middleText flex flex-col items-start justify-start py-5">
-                    <a href="https://mymaarg.com/privacy-policy" class="text-main text-sm font-normal text-white py-2">Privacy Policy</a>
-                    <a href="https://mymaarg.com/terms-and-condition" class="text-main text-sm font-normal text-white py-2">Terms and
+                    <a href="https://mymaarg.com/privacy-policy"
+                        class="text-main text-sm font-normal text-white py-2">Privacy Policy</a>
+                    <a href="https://mymaarg.com/terms-and-condition"
+                        class="text-main text-sm font-normal text-white py-2">Terms and
                         Conditions</a>
-                    <a href="https://mymaarg.com/fulfilment" class="text-main text-sm font-normal text-white py-2">Fulfilment
+                    <a href="https://mymaarg.com/fulfilment"
+                        class="text-main text-sm font-normal text-white py-2">Fulfilment
                         Policy</a>
                     <a href="https://mymaarg.com/sitemap" class="text-main text-sm font-normal text-white py-2">Sitemap
                         Policy</a>
