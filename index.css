@@ -1,0 +1,193 @@
+* {
+    font-family: Plus Jakarta Sans;
+}
+
+.bg-main {
+    background: rgba(96, 187, 224, 1);
+}
+
+.text-lightBlue {
+    color: rgba(96, 187, 224, 1);
+}
+
+.btn-Bg {
+    background: rgba(29, 45, 90, 1);
+}
+
+.border-main {
+    border: 1px solid rgba(29, 45, 90, 1);
+}
+
+.title {
+    background: rgba(96, 187, 224, 1);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 7px 30px;
+}
+
+.text-main {
+    color: rgba(29, 45, 90, 1);
+}
+
+.text-gray {
+    color: rgba(71, 85, 105, 1);
+}
+
+.text-lightBlue {
+    color: rgba(96, 187, 224, 1);
+}
+
+.bg-lightBlue {
+    background: rgba(96, 187, 224, 1);
+}
+
+.questionBox {
+    border: 1px solid rgba(29, 45, 90, 0.11)
+}
+
+.hoverState:hover {
+    background: linear-gradient(149deg, #60BBE0 0.06%, #2488B0 111.09%) !important;
+}
+
+.hoverState:hover p {
+    color: white !important;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.close .body {
+    display: none;
+}
+
+.open .body {
+    display: block;
+}
+
+.close .dropUp {
+    display: block;
+}
+
+.open .dropUp {
+    display: none;
+}
+
+.open .dropDown {
+    display: block;
+}
+
+.navDropEffect:hover {
+    background: rgba(187, 184, 184, 0.514);
+}
+
+
+.offerHover {
+    background: rgba(240, 249, 252, 1);
+}
+
+.offerHover:hover {
+    background: linear-gradient(278deg, #5EB6DA 0.88%, #3293BB 100.58%) !important;
+}
+
+.offerHover:hover p {
+    color: white !important;
+}
+
+
+/* ########################## LANDING PAGE WORD ############# */
+
+.wrapper {
+    box-sizing: content-box;
+    height: 80px;
+    display: flex;
+}
+
+.words {
+    overflow: hidden;
+}
+
+.words span {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    animation: spin_words 4s infinite;
+    animation-direction: initial;
+}
+
+@keyframes spin_words {
+    0% {
+        transform: translateY(0%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(-200%);
+    }
+
+    75% {
+        transform: translateY(-300%);
+    }
+
+    100% {
+        transform: translateY(-300%);
+    }
+
+}
+
+.menterosImg {
+    position: absolute;
+    bottom: -30px;
+}
+
+.bgImg {
+    background-image: url('img/Landing-Page-Web.webp');
+    background-size: cover;
+}
+
+.newMaster {
+    background-image: url('img/newMaster.webp');
+    background-size: cover;
+}
+
+.dropImg {
+    height: 10px;
+    width: 15px;
+}
+
+.dropImgMobile {
+    height: 7px;
+    width: 12px;
+}
+
+.mentorLinked {
+    height: 20px;
+    width: 20px;
+}
+
+.bgRounded {
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.currently {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.notCurrently {
+    border-radius: 0px 10px 10px 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
