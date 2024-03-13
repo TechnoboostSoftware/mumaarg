@@ -10,8 +10,8 @@ var mentorObj = [
         "college": "Symbiosis Centre for Media & Communication",
         "linkedInUrl": "https://www.linkedin.com/in/anikait-chakraborty/",
         "calendarLink": "",
-        "img": "img/newMentorPic-1.webp",
-        "mobileImg": "img/newMentorMobile-1.webp",
+        "img": "../../img/newMentorPic-1.webp",
+        "mobileImg": "../../img/newMentorMobile-1.webp",
         "ComapniesAndroles": [
             {
                 "role": "Head of Media",
@@ -36,8 +36,8 @@ var mentorObj = [
         "college": "Geetanjali Institute of Technical Studies",
         "linkedInUrl": "https://www.linkedin.com/in/amit-kundu-39b20a253/",
         "calendarLink": "https://calendly.com/amit-kundu",
-        "img": "img/newMentorPic-0.webp",
-        "mobileImg": "img/newMentorMobile-0.webp",
+        "img": "../../img/newMentorPic-0.webp",
+        "mobileImg": "../../img/newMentorMobile-0.webp",
         "ComapniesAndroles": [
             {
                 "role": "AVP - Enterprise Demand and Forecasting",
@@ -57,8 +57,8 @@ var mentorObj = [
         "college": "G.L.A. University, Uttar Pradesh",
         "linkedInUrl": "https://www.linkedin.com/in/anindyasingh/",
         "calendarLink": "",
-        "img": "img/newMentorPic-2.webp",
-        "mobileImg": "img/newMentorMobile-2.webp",
+        "img": "../../img/newMentorPic-2.webp",
+        "mobileImg": "../../img/newMentorMobile-2.webp",
         "ComapniesAndroles": [
             {
                 "role": "Digital Transformation Analyst - dss+",
@@ -78,8 +78,8 @@ var mentorObj = [
         "college": "Chaitanya Bharti Institute of Technology",
         "linkedInUrl": "https://www.linkedin.com/in/ajaykumarsunnapu/",
         "calendarLink": "",
-        "img": "img/newMentorPic-3.webp",
-        "mobileImg": "img/newMentorMobile-3.webp",
+        "img": "../../img/newMentorPic-3.webp",
+        "mobileImg": "../../img/newMentorMobile-3.webp",
         "ComapniesAndroles": [
             {
                 "role": "Consulting Project Manager",
@@ -100,8 +100,8 @@ var mentorObj = [
         "college": "Annamalai University",
         "linkedInUrl": "https://www.linkedin.com/in/ishani-chakravorty/",
         "calendarLink": "",
-        "img": "img/newMentorPic-4.webp",
-        "mobileImg": "img/newMentorMobile-4.webp",
+        "img": "../../img/newMentorPic-4.webp",
+        "mobileImg": "../../img/newMentorMobile-4.webp",
         "ComapniesAndroles": [
             {
                 "role": "Founder",
@@ -126,8 +126,8 @@ var mentorObj = [
         "college": "Institute of Hotel Management Bangalore",
         "linkedInUrl": "https://www.linkedin.com/in/ramsha-mustafa-6850a5170/",
         "calendarLink": "",
-        "img": "img/newMentorPic-5.webp",
-        "mobileImg": "img/newMentorMobile-5.webp",
+        "img": "../../img/newMentorPic-5.webp",
+        "mobileImg": "../../img/newMentorMobile-5.webp",
         "ComapniesAndroles": [
             {
                 "role": "Manager",
@@ -148,8 +148,8 @@ var mentorObj = [
         "college": " Kamla Nehru College | IGNOU",
         "linkedInUrl": "https://www.linkedin.com/in/trishla-sapla/",
         "calendarLink": "",
-        "img": "img/newMentorPic-6.webp",
-        "mobileImg": "img/newMentorMobile-6.webp",
+        "img": "../../img/newMentorPic-6.webp",
+        "mobileImg": "../../img/newMentorMobile-6.webp",
         "ComapniesAndroles": [
             {
                 "role": "Financial Planning  & Analysis Specialist",
@@ -205,7 +205,7 @@ function createMentorCard(mentorObj) {
                     <div class="flex flex-col justify-start md:items-start items-center">
                         <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
                             <span class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
-                            <a href="${mentorObj[i].linkedInUrl}"><img src="img/masterLinkedin.png" class="mentorLinked"></a>
+                            <a href="${mentorObj[i].linkedInUrl}"><img src="../../img/masterLinkedin.png" class="mentorLinked"></a>
                         </div>
                         <div class="md:hidden flex flex-col">
                             <div class="flex">
@@ -220,11 +220,11 @@ function createMentorCard(mentorObj) {
                         </div>
                         <div class="flex flex-col gap-y-3 md:pt-0 pt-5">
                             <div class="flex gap-x-3 items-center">
-                                <img src="img/teacher.svg" class="mentorLinked">
+                                <img src="../../img/teacher.svg" class="mentorLinked">
                                 <p class="mentorName font-normal md:text-base text-sm text-main">${mentorObj[i].college}</p>
                             </div>
                             <div class="flex gap-x-3 items-center">
-                            <img src="img/briefcase.svg" class="mentorLinked">
+                            <img src="../../img/briefcase.svg" class="mentorLinked">
                             <p class="mentorName font-normal md:text-base text-sm text-main">`
             for (let j = 0; j < mentorObj[i].ComapniesAndroles.length; j++) {
                 if (mentorObj[i].ComapniesAndroles.length > 1) {
@@ -241,7 +241,7 @@ function createMentorCard(mentorObj) {
             }
             mentorHtml += `</p></div>
                             <div class="flex gap-x-3 items-center">
-                                <img src="img/brifecase-timer.svg" class="mentorLinked">
+                                <img src="../../img/brifecase-timer.svg" class="mentorLinked">
                                 <p class="mentorName font-normal md:text-base text-sm text-main"><span class="text-base font-bold text-lightBlue">${mentorObj[i].workExperience} </span>  Years of Experience</p>
                             </div>
                         </div>
@@ -290,7 +290,7 @@ function createMentorCard(mentorObj) {
                     <div class="flex flex-col justify-start md:items-start items-center">
                         <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
                             <span class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
-                            <a href="${mentorObj[i].linkedInUrl}"><img src="img/masterLinkedin.png" class="mentorLinked"></a>
+                            <a href="${mentorObj[i].linkedInUrl}"><img src="../../img/masterLinkedin.png" class="mentorLinked"></a>
                         </div>
                         <div class="md:hidden flex flex-col">
                             <div class="flex">
@@ -305,11 +305,11 @@ function createMentorCard(mentorObj) {
                         </div>
                         <div class="flex flex-col gap-y-3 md:pt-0 pt-5">
                             <div class="flex gap-x-3 items-center">
-                                <img src="img/teacher.svg" class="mentorLinked">
+                                <img src="../../img/teacher.svg" class="mentorLinked">
                                 <p class="mentorName font-normal md:text-base text-sm text-main">${mentorObj[i].college}</p>
                             </div>
                             <div class="flex gap-x-3 items-center">
-                            <img src="img/briefcase.svg" class="mentorLinked">
+                            <img src="../../img/briefcase.svg" class="mentorLinked">
                             <p class="mentorName font-normal md:text-base text-sm text-main">`
             for (let j = 0; j < mentorObj[i].ComapniesAndroles.length; j++) {
                 if (mentorObj[i].ComapniesAndroles.length > 1) {
@@ -325,7 +325,7 @@ function createMentorCard(mentorObj) {
             }
             mentorHtml += `</p></div>
                             <div class="flex gap-x-3 items-center">
-                                <img src="img/brifecase-timer.svg" class="mentorLinked">
+                                <img src="../../img/brifecase-timer.svg" class="mentorLinked">
                                 <p class="mentorName font-normal md:text-base text-sm text-main"><span class="text-base font-bold text-lightBlue">${mentorObj[i].workExperience} </span>  Years of Experience</p>
                             </div>
                             
