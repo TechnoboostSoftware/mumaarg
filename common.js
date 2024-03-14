@@ -9,7 +9,7 @@ var mentorObj = [
         // "course": "BBA",
         "college": "Symbiosis Centre for Media & Communication",
         "linkedInUrl": "https://www.linkedin.com/in/anikait-chakraborty/",
-        "calendarLink": "https://calendly.com/anikait-chakraborty/30min",
+        "calendarLink": "",
         "img": "../../img/newMentorPic-1.webp",
         "mobileImg": "../../img/newMentorMobile-1.webp",
         "ComapniesAndroles": [
@@ -35,7 +35,7 @@ var mentorObj = [
         // "course": "",
         "college": "Geetanjali Institute of Technical Studies",
         "linkedInUrl": "https://www.linkedin.com/in/amit-kundu-39b20a253/",
-        "calendarLink": "https://calendly.com/amit-kundu/30min",
+        "calendarLink": "https://calendly.com/amit-kundu",
         "img": "../../img/newMentorPic-0.webp",
         "mobileImg": "../../img/newMentorMobile-0.webp",
         "ComapniesAndroles": [
@@ -77,7 +77,7 @@ var mentorObj = [
         // "course": "B.Tech",
         "college": "Chaitanya Bharti Institute of Technology",
         "linkedInUrl": "https://www.linkedin.com/in/ajaykumarsunnapu/",
-        "calendarLink": "https://calendly.com/ajaykumarsunnapu/1-1-sync-up",
+        "calendarLink": "https://calendly.com/ajaykumarsunnapu",
         "img": "../../img/newMentorPic-3.webp",
         "mobileImg": "../../img/newMentorMobile-3.webp",
         "ComapniesAndroles": [
@@ -147,7 +147,7 @@ var mentorObj = [
         // "course": "B.Tech",
         "college": " Kamla Nehru College | IGNOU",
         "linkedInUrl": "https://www.linkedin.com/in/trishla-sapla/",
-        "calendarLink": "https://calendly.com/trishla-sapla/one-one-discussion",
+        "calendarLink": "",
         "img": "../../img/newMentorPic-6.webp",
         "mobileImg": "../../img/newMentorMobile-6.webp",
         "ComapniesAndroles": [
@@ -169,7 +169,7 @@ var mentorObj = [
         // "course": "B.Tech",
         "college": " University of Delhi",
         "linkedInUrl": "https://www.linkedin.com/in/vikram-singh-855b4416/",
-        "calendarLink": "https://calendly.com/vikram-singh11/30min",
+        "calendarLink": "",
         "img": "../../img/newMentorPic-7.webp",
         "mobileImg": "../../img/newMentorMobile-7.webp",
         "ComapniesAndroles": [
@@ -232,7 +232,7 @@ function createMentorCard(mentorObj) {
                     <div class="flex flex-col justify-start md:items-start items-center">
                         <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
                             <span class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
-                            <a href="${mentorObj[i].linkedInUrl}"><img src="../../img/masterLinkedin.png" class="mentorLinked"></a>
+                            <a href="${mentorObj[i].linkedInUrl}"><img src="../../img/masterLinkedin.png" target="_blank" class="mentorLinked"></a>
                         </div>
                         <div class="md:hidden flex flex-col">
                             <div class="flex">
@@ -431,21 +431,22 @@ function applyFilter(elem, filter) {
     let currentFilter = elem.value;
 
 
-    if(filter == 'domain'){
-        clonedMentorObj =[...mentorObj]
-        domainFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
-        let experience =[ ...new Set(domainFiltered.map((element) => element['experience']))];
+    if (filter == 'domain') {
+        clonedMentorObj = [...mentorObj]
+        domainFiltered = clonedMentorObj.filter(d => d['domain'] == currentFilter)
+        let experience = [...new Set(domainFiltered.map((element) => element['experience']))];
         createExpFilter(experience)
         createMentorCard(domainFiltered)
 
     }
 
     if (filter == 'experience') {
-        if(domainFiltered == ""){
-            clonedMentorObj =clonedMentorObj.filter(d=> d['experience'] == currentFilter)
-        }else{
-            clonedMentorObj =domainFiltered.filter(d=> d['experience'] == currentFilter)
+        if (domainFiltered == "") {
+            clonedMentorObj = clonedMentorObj.filter(d => d['experience'] == currentFilter)
+        } else {
+            clonedMentorObj = domainFiltered.filter(d => d['experience'] == currentFilter)
         }
+        experiencedFiltered = clonedMentorObj.filter(d => d['experience'] == currentFilter)
 
         createMentorCard(experiencedFiltered)
     }

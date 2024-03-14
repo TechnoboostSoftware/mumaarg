@@ -115,14 +115,14 @@ var obj = [
 ]
 
 $(document).ready(function () {
-    createMentors()
+    createMentors(obj)
 })
 
-function createMentors() {
+function createMentors(obj) {
     $("#number").text(obj.length)
     let html = ""
     for (let i = 0; i < obj.length; i++) {
-        html += `<div class="md:col-span-4 col-span-12 ">
+        html += `<div class="md:col-span-4 col-span-12" id = "forsearch-${i}">
         <div class="rounded flex flex-col p-3 h-full" style="background-color: rgba(247, 248, 251, 1);">
             <div class="grid grid-cols-12 flex items-center md:gap-x-3 gap-x-6">
                 <div class="col-span-5 flex justify-center">
@@ -136,7 +136,7 @@ function createMentors() {
                                 <p class="text-xs font-medium">New Mentor</p>
                             </div>
                         </div>
-                        <p class="text-xl font-bold text-main">${obj[i].name}</p>
+                        <p class="text-xl font-bold text-main mentorName">${obj[i].name}</p>
                     </div>
                 </div>
             </div>
@@ -167,4 +167,30 @@ function createMentors() {
     </div>`
         $('#browsermentors').html(html)
     }
+}
+
+function search() {
+    let input = $("#searchMentor").val()
+    let mentorNameList = $(".mentorName")
+    if (input != "") {
+        $('#browsermentors').html('')
+        var filterList = obj.filter(d => d.name.includes(input))
+        createMentors(filterList)
+        // for (let i = 0; i < mentorNameList.length; i++) {   
+        //     if (!mentorNameList[i].innerHTML.toLowerCase().includes(input)) {
+        //         $("#forsearch-" + i).addClass("hidden")
+        //     }
+        //     else {
+        //         $("#forsearch-" + i).removeClass("hidden")
+        //         count += 1
+        //         $("#number").text(count)
+        //     }
+        // }
+
+    }
+    else {
+        createMentors(obj)
+    }
+
+
 }
