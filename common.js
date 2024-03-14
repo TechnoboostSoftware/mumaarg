@@ -188,6 +188,11 @@ function initilise() {
 
 function createMentorCard(mentorObj) {
     let mentorHtml = ''
+    // if(mentorObj.length == 0){
+    //    mentorHtml= '<div class="flex items-center gap-y-3 py-3"><p> No Data Found ! Please change filter and try again</p></div>';
+    //    $("#mentorList").html(mentorHtml)
+    //     return
+    // }
     if (filterApplied) {
 
         for (let i = 0; i < mentorObj.length; i++) {
@@ -405,12 +410,8 @@ function applyFilter(elem, filter) {
 
 
     if(filter == 'domain'){
-        if(experiencedFiltered == ""){
-            domainFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
-           // experiencedFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
-        }else{
-            domainFiltered = experiencedFiltered.filter(d=> d['domain'] == currentFilter)
-        }
+        clonedMentorObj =[...mentorObj]
+        domainFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
         let experience =[ ...new Set(domainFiltered.map((element) => element['experience']))];
         createExpFilter(experience)
         createMentorCard(domainFiltered)
@@ -418,8 +419,12 @@ function applyFilter(elem, filter) {
     }
 
     if (filter == 'experience') {
-        clonedMentorObj =[...mentorObj]
-        experiencedFiltered = clonedMentorObj.filter(d=> d['experience'] == currentFilter)
+        if(domainFiltered == ""){
+            clonedMentorObj =clonedMentorObj.filter(d=> d['experience'] == currentFilter)
+        }else{
+            clonedMentorObj =domainFiltered.filter(d=> d['experience'] == currentFilter)
+        }
+
         createMentorCard(experiencedFiltered)
     }
 
