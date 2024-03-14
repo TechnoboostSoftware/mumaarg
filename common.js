@@ -9,7 +9,7 @@ var mentorObj = [
         // "course": "BBA",
         "college": "Symbiosis Centre for Media & Communication",
         "linkedInUrl": "https://www.linkedin.com/in/anikait-chakraborty/",
-        "calendarLink": "",
+        "calendarLink": "https://calendly.com/anikait-chakraborty/30min",
         "img": "../../img/newMentorPic-1.webp",
         "mobileImg": "../../img/newMentorMobile-1.webp",
         "ComapniesAndroles": [
@@ -35,7 +35,7 @@ var mentorObj = [
         // "course": "",
         "college": "Geetanjali Institute of Technical Studies",
         "linkedInUrl": "https://www.linkedin.com/in/amit-kundu-39b20a253/",
-        "calendarLink": "https://calendly.com/amit-kundu",
+        "calendarLink": "https://calendly.com/amit-kundu/30min",
         "img": "../../img/newMentorPic-0.webp",
         "mobileImg": "../../img/newMentorMobile-0.webp",
         "ComapniesAndroles": [
@@ -56,7 +56,7 @@ var mentorObj = [
         // "course": "BBA",
         "college": "G.L.A. University, Uttar Pradesh",
         "linkedInUrl": "https://www.linkedin.com/in/anindyasingh/",
-        "calendarLink": "",
+        "calendarLink": "https://calendly.com/anindya-singh-mu/30min",
         "img": "../../img/newMentorPic-2.webp",
         "mobileImg": "../../img/newMentorMobile-2.webp",
         "ComapniesAndroles": [
@@ -77,7 +77,7 @@ var mentorObj = [
         // "course": "B.Tech",
         "college": "Chaitanya Bharti Institute of Technology",
         "linkedInUrl": "https://www.linkedin.com/in/ajaykumarsunnapu/",
-        "calendarLink": "",
+        "calendarLink": "https://calendly.com/ajaykumarsunnapu/1-1-sync-up",
         "img": "../../img/newMentorPic-3.webp",
         "mobileImg": "../../img/newMentorMobile-3.webp",
         "ComapniesAndroles": [
@@ -147,7 +147,7 @@ var mentorObj = [
         // "course": "B.Tech",
         "college": " Kamla Nehru College | IGNOU",
         "linkedInUrl": "https://www.linkedin.com/in/trishla-sapla/",
-        "calendarLink": "",
+        "calendarLink": "https://calendly.com/trishla-sapla/one-one-discussion",
         "img": "../../img/newMentorPic-6.webp",
         "mobileImg": "../../img/newMentorMobile-6.webp",
         "ComapniesAndroles": [
@@ -158,10 +158,32 @@ var mentorObj = [
             },
 
         ]
+    },
+    {
+        "name": "Vikram Singh",
+        "city": "Delhi NCR",
+        // "state": "Andhra Pradesh",
+        "experience": " > 5 Years",
+        "domain": "Finance",
+        "workExperience": 15,
+        // "course": "B.Tech",
+        "college": " University of Delhi",
+        "linkedInUrl": "https://www.linkedin.com/in/vikram-singh-855b4416/",
+        "calendarLink": "https://calendly.com/vikram-singh11/30min",
+        "img": "../../img/newMentorPic-7.webp",
+        "mobileImg": "../../img/newMentorMobile-7.webp",
+        "ComapniesAndroles": [
+            {
+                "role": "Insurance",
+                "company": "ICICI Lombard",
+                "current": true
+            },
+
+        ]
     }
 ]
 
-var mentorsOrder = [0, 1, 2, 3, 4, 5,6]
+var mentorsOrder = [7, 1, 0, 2, 6, 3]
 $(document).ready(function () {
     initilise();
 })
