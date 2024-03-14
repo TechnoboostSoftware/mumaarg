@@ -539,7 +539,7 @@ function createMentorCard(mentorObj){
                     <div class="flex flex-col justify-start md:items-start items-center">
                         <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
                             <span class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
-                            <a href="${mentorObj[i].linkedInUrl}"><img src="../../img/masterLinkedin.png" class="mentorLinked"></a>
+                            <a href="${mentorObj[i].linkedInUrl}" target="_blank"><img src="../../img/masterLinkedin.png" class="mentorLinked"></a>
                         </div>
                         <div class="md:hidden flex flex-col">
                             <div class="flex">
