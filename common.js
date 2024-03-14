@@ -161,7 +161,7 @@ var mentorObj = [
     }
 ]
 
-var mentorsOrder = [0, 1, 2, 3, 4, 5, 6]
+var mentorsOrder = [0, 1, 2, 3, 4, 5,6]
 $(document).ready(function () {
     initilise();
 })
@@ -403,24 +403,24 @@ function applyFilter(elem, filter) {
 
     let currentFilter = elem.value;
 
-    if (filter == 'experience') {
-        clonedMentorObj = [...mentorObj]
-        experiencedFiltered = clonedMentorObj.filter(d => d['experience'] == currentFilter)
-        domain = [...new Set(experiencedFiltered.map((element) => element['domain']))];
-        state = [...new Set(experiencedFiltered.map((element) => element['state']))];
-        createDomainFilter(domain)
-        createMentorCard(experiencedFiltered)
-    }
 
-    if (filter == 'domain') {
-        if (experiencedFiltered == "") {
-            domainFiltered = clonedMentorObj.filter(d => d['domain'] == currentFilter)
-            // experiencedFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
-        } else {
-            domainFiltered = experiencedFiltered.filter(d => d['domain'] == currentFilter)
+    if(filter == 'domain'){
+        if(experiencedFiltered == ""){
+            domainFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
+           // experiencedFiltered = clonedMentorObj.filter(d=> d['domain'] == currentFilter)
+        }else{
+            domainFiltered = experiencedFiltered.filter(d=> d['domain'] == currentFilter)
         }
+        let experience =[ ...new Set(domainFiltered.map((element) => element['experience']))];
+        createExpFilter(experience)
         createMentorCard(domainFiltered)
 
+    }
+
+    if (filter == 'experience') {
+        clonedMentorObj =[...mentorObj]
+        experiencedFiltered = clonedMentorObj.filter(d=> d['experience'] == currentFilter)
+        createMentorCard(experiencedFiltered)
     }
 
 }
