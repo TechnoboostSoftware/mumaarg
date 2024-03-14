@@ -441,15 +441,15 @@ function applyFilter(elem, filter) {
     }
 
     if (filter == 'experience') {
-        if (domainFiltered == "") {
-            clonedMentorObj = clonedMentorObj.filter(d => d['experience'] == currentFilter)
-        } else {
-            clonedMentorObj = domainFiltered.filter(d => d['experience'] == currentFilter)
+        if(domainFiltered == ""){
+            clonedMentorObj =[...mentorObj]
+            experiencedFiltered =clonedMentorObj.filter(d=> d['experience'] == currentFilter)
+        }else{
+            experiencedFiltered =domainFiltered.filter(d=> d['experience'] == currentFilter)
         }
-        experiencedFiltered = clonedMentorObj.filter(d => d['experience'] == currentFilter)
-
         createMentorCard(experiencedFiltered)
     }
+
 
 }
 
