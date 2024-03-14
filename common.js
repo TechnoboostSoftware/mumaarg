@@ -89,54 +89,54 @@ var mentorObj = [
         ]
     }
     ,
-    {
-        "name": "Ishani",
-        "city": "Delhi NCR",
-        "state": "Orissa",
-        "experience": " > 5 Years",
-        "domain": "Fashion  Entrepreneur",
-        "workExperience": 7.4,
-        // "course": "BBM",
-        "college": "Annamalai University",
-        "linkedInUrl": "https://www.linkedin.com/in/ishani-chakravorty/",
-        "calendarLink": "",
-        "img": "../../img/newMentorPic-4.webp",
-        "mobileImg": "../../img/newMentorMobile-4.webp",
-        "ComapniesAndroles": [
-            {
-                "role": "Founder",
-                "company": "Earth Republic",
-                "current": true
-            },
-            {
-                "role": "Lecturer",
-                "company": "International Institute Of Fashion Design",
-                "current": true
-            }
-        ]
-    },
-    {
-        "name": "Ramsha Mustafa",
-        "city": "Delhi NCR",
-        // "state": "Andhra Pradesh",
-        "experience": " 0-5 Years",
-        "domain": "Hotel Management",
-        "workExperience": 4.3,
-        // "course": "B.Tech",
-        "college": "Institute of Hotel Management Bangalore",
-        "linkedInUrl": "https://www.linkedin.com/in/ramsha-mustafa-6850a5170/",
-        "calendarLink": "",
-        "img": "../../img/newMentorPic-5.webp",
-        "mobileImg": "../../img/newMentorMobile-5.webp",
-        "ComapniesAndroles": [
-            {
-                "role": "Manager",
-                "company": "Food delivery & takeway service services (PAN India)  - ITC Hotels",
-                "current": true
-            },
+    // {
+    //     "name": "Ishani",
+    //     "city": "Delhi NCR",
+    //     "state": "Orissa",
+    //     "experience": " > 5 Years",
+    //     "domain": "Fashion  Entrepreneur",
+    //     "workExperience": 7.4,
+    //     // "course": "BBM",
+    //     "college": "Annamalai University",
+    //     "linkedInUrl": "https://www.linkedin.com/in/ishani-chakravorty/",
+    //     "calendarLink": "",
+    //     "img": "../../img/newMentorPic-4.webp",
+    //     "mobileImg": "../../img/newMentorMobile-4.webp",
+    //     "ComapniesAndroles": [
+    //         {
+    //             "role": "Founder",
+    //             "company": "Earth Republic",
+    //             "current": true
+    //         },
+    //         {
+    //             "role": "Lecturer",
+    //             "company": "International Institute Of Fashion Design",
+    //             "current": true
+    //         }
+    //     ]
+    // },
+    // {
+    //     "name": "Ramsha Mustafa",
+    //     "city": "Delhi NCR",
+    //     // "state": "Andhra Pradesh",
+    //     "experience": " 0-5 Years",
+    //     "domain": "Hotel Management",
+    //     "workExperience": 4.3,
+    //     // "course": "B.Tech",
+    //     "college": "Institute of Hotel Management Bangalore",
+    //     "linkedInUrl": "https://www.linkedin.com/in/ramsha-mustafa-6850a5170/",
+    //     "calendarLink": "",
+    //     "img": "../../img/newMentorPic-5.webp",
+    //     "mobileImg": "../../img/newMentorMobile-5.webp",
+    //     "ComapniesAndroles": [
+    //         {
+    //             "role": "Manager",
+    //             "company": "Food delivery & takeway service services (PAN India)  - ITC Hotels",
+    //             "current": true
+    //         },
 
-        ]
-    },
+    //     ]
+    // },
     {
         "name": "Trishla Sapla",
         "city": "Delhi NCR",
@@ -183,7 +183,7 @@ var mentorObj = [
     }
 ]
 
-var mentorsOrder = [7, 1, 0, 2, 6, 3]
+var mentorsOrder = [5, 1, 0, 2, 4, 3]
 $(document).ready(function () {
     initilise();
 })
