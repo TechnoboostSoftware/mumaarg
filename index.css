@@ -165,8 +165,9 @@
 }
 
 .dropImg {
-    height: 10px;
-    width: 15px;
+    height: 9px;
+    width: 16px;
+    transform: rotate(180deg);
 }
 
 .dropImgMobile {
@@ -197,5 +198,5 @@ html {
 }
 
 .dropUp{
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
