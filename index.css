@@ -195,3 +195,7 @@
 html {
     scroll-behavior: smooth;
 }
+
+.dropUp{
+    transform: rotate(180deg);
+}

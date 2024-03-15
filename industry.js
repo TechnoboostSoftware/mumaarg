@@ -118,11 +118,11 @@ function createMentorCard(mentorObj) {
                 </div>
                 <div class="md:col-span-6 col-span-12 py-5 md:px-0 px-5">
                     <div class="flex flex-col justify-start md:items-start items-center">
-                        <div class="flex md:items-center items-end md:justify-start justify-center gap-x-3 mb-3">
+                        <div class="flex items-center md:justify-start justify-center gap-x-3 mb-3">
                             <span
                                 class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
                             <a href="${mentorObj[i].linkedin}" target="_blank"><img src="../../img/masterLinkedin.png"
-                                    target="_blank" class="mentorLinked"></a>
+                                    target="_blank" class="mentorLinked mt-1"></a>
                         </div>
                         
                         <div class="flex flex-col gap-y-3 md:pt-0 pt-5">
@@ -175,11 +175,11 @@ function createMentorCard(mentorObj) {
                 </div>
                 <div class="md:col-span-6 col-span-12 py-5 md:px-0 px-5">
                     <div class="flex flex-col justify-start md:items-start items-center">
-                        <div class="flex md:items-center items-end md:justify-start justify-center gap-x-3 mb-3">
+                        <div class="flex items-center md:justify-start justify-center gap-x-3 mb-3">
                             <span
                                 class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
                             <a href="${mentorObj[i].linkedin}" target="_blank"><img src="../../img/masterLinkedin.png"
-                                    target="_blank" class="mentorLinked"></a>
+                                    target="_blank" class="mentorLinked mt-1"></a>
                         </div>
                         
                         <div class="flex flex-col gap-y-3 md:pt-0 pt-5">
@@ -301,6 +301,7 @@ function filterTypeDrop(id) {
 
 function filterDrop(id) {
     $('#' + id).toggleClass('hidden')
+    $('#arrowUp').toggleClass('dropUp')
 }
 
 function mobileFilterDisplay(id) {

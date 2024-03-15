@@ -232,7 +232,7 @@ function createMentorCard(mentorObj) {
                     <div class="flex flex-col justify-start md:items-start items-center">
                         <div class="flex items-center md:justify-start justify-center gap-x-3 mb-3">
                             <span class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
-                            <a href="${mentorObj[i].linkedInUrl}"><img src="../../img/masterLinkedin.png" target="_blank" class="mentorLinked"></a>
+                            <a href="${mentorObj[i].linkedInUrl}"><img src="../../img/masterLinkedin.png" target="_blank" class="mentorLinked mt-1"></a>
                         </div>
                         <div class="md:hidden flex flex-col">
                             <div class="flex">
@@ -315,9 +315,9 @@ function createMentorCard(mentorObj) {
                 </div>
                 <div class="md:col-span-6 col-span-12 py-5 md:px-0 px-5">
                     <div class="flex flex-col justify-start md:items-start items-center">
-                        <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
+                        <div class="flex items-center md:justify-start justify-center gap-x-3 mb-3">
                             <span class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
-                            <a href="${mentorObj[i].linkedInUrl}" target="_blank"><img src="../../img/masterLinkedin.png" class="mentorLinked"></a>
+                            <a href="${mentorObj[i].linkedInUrl}" target="_blank"><img src="../../img/masterLinkedin.png" class="mentorLinked mt-1"></a>
                         </div>
                         <div class="md:hidden flex flex-col">
                             <div class="flex">
