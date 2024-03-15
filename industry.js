@@ -118,7 +118,7 @@ function createMentorCard(mentorObj) {
                 </div>
                 <div class="md:col-span-6 col-span-12 py-5 md:px-0 px-5">
                     <div class="flex flex-col justify-start md:items-start items-center">
-                        <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
+                        <div class="flex md:items-center items-end md:justify-start justify-center gap-x-3 mb-3">
                             <span
                                 class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
                             <a href="${mentorObj[i].linkedin}" target="_blank"><img src="../../img/masterLinkedin.png"
@@ -142,9 +142,12 @@ function createMentorCard(mentorObj) {
                     </div>
                 </div>
                 <div class="md:col-span-3 col-span-12 py-5 md:pr-5 md:pl-0 px-5">
+                    <div class=" md:flex hidden items-center justify-center">
+                        <img src="../../img/maarg-logo.svg" class = "w-24">
+                    </div>
                     <div class="">
                         <div class="md:mt-5 m-0">
-                            <a href="javascript:;" onclick="openCalendar('${mentorObj[i].calendarLink}')"
+                            <a href="javascript:;"
                                 class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
                                 <span>Book Now</span></a>
                         </div>
@@ -172,7 +175,7 @@ function createMentorCard(mentorObj) {
                 </div>
                 <div class="md:col-span-6 col-span-12 py-5 md:px-0 px-5">
                     <div class="flex flex-col justify-start md:items-start items-center">
-                        <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
+                        <div class="flex md:items-center items-end md:justify-start justify-center gap-x-3 mb-3">
                             <span
                                 class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
                             <a href="${mentorObj[i].linkedin}" target="_blank"><img src="../../img/masterLinkedin.png"
@@ -196,9 +199,12 @@ function createMentorCard(mentorObj) {
                     </div>
                 </div>
                 <div class="md:col-span-3 col-span-12 py-5 md:pr-5 md:pl-0 px-5">
+                    <div class=" md:flex hidden items-center justify-center">
+                        <img src="../../img/maarg-logo.svg" class = "w-24">
+                    </div>
                     <div class="">
                         <div class="md:mt-5 m-0">
-                            <a href="javascript:;" onclick="openCalendar('${mentorObj[i].calendarLink}')"
+                            <a href="javascript:;"
                                 class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
                                 <span>Book Now</span></a>
                         </div>
@@ -294,19 +300,18 @@ function filterTypeDrop(id) {
 }
 
 function filterDrop(id) {
-    $('.dontShow').addClass('hidden')
-    $('#' + id).removeClass('hidden')
+    $('#' + id).toggleClass('hidden')
 }
 
 function mobileFilterDisplay(id) {
     $(id).toggleClass('hidden')
 }
 
-function openCalendar(calendarLink) {
-    if (calendarLink == "") {
-        alert("Something went wrong ! please try after sometime")
-    } else {
-        Calendly.initPopupWidget({ url: calendarLink })
-    }
+// function openCalendar(calendarLink) {
+//     if (calendarLink == "") {
+//         alert("Something went wrong ! please try after sometime")
+//     } else {
+//         Calendly.initPopupWidget({ url: calendarLink })
+//     }
 
-}
+// }
