@@ -167,7 +167,6 @@
 .dropImg {
     height: 9px;
     width: 16px;
-    transform: rotate(180deg);
 }
 
 .dropImgMobile {
@@ -195,6 +194,9 @@
 
 html {
     scroll-behavior: smooth;
+}
+.dropDown{
+    transform: rotate(180deg);
 }
 
 .dropUp{
