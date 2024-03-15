@@ -4,7 +4,7 @@ var mentorObj = [
         "domain": "Branding/Marketing",
         "about": "Chief Marketing Officer - Modi Naturals | 14+ Years in Consumer Business | Digital Evangelist | Award-Winning Marketer | Speaker & Mentor | Fueling Growth through Ideas and Storytelling.",
         "img": "../../img/industryExperts-0.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-0.svg",
+        "mobileImg": "../../img/mobileIndustryExperts-0.webp",
         "linkedin": "https://www.linkedin.com/in/mukeshghuraiya/"
     },
 
@@ -13,7 +13,7 @@ var mentorObj = [
         "domain": "Consulting",
         "about": "Founder @ Havish M Consulting | Harvard Online Data Science | 40u40 Analytics | Faculty at IMT Ghaziabad, Masters' Union and SRCC | ET Masterclass Instructor | AuthorX20 | MOS MCT MCDA",
         "img": "../../img/industryExperts-1.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-1.svg",
+        "mobileImg": "../../img/mobileIndustryExperts-1.webp",
         "linkedin": "https://www.linkedin.com/in/havishm/"
     },
 
@@ -22,7 +22,7 @@ var mentorObj = [
         "domain": "Tech",
         "about": "Lead Product Manager- Expedia group | ex-Zomato| IIT Roorkee | Product Mentor",
         "img": "../../img/industryExperts-2.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-2.svg",
+        "mobileImg": "../../img/mobileIndustryExperts-2.webp",
         "linkedin": "https://www.linkedin.com/in/animeshchandra/"
     },
 
@@ -31,7 +31,7 @@ var mentorObj = [
         "domain": "Digital/Growth Marketing",
         "about": "Head of Growth - White.Inc | Ex-FilterCopy, PayTm, Jupiter, Betterhalf",
         "img": "../../img/industryExperts-3.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-3.svg",
+        "mobileImg": "../../img/mobileIndustryExperts-3.webp",
         "linkedin": "https://www.linkedin.com/in/sindhubiswal/"
     },
 
@@ -40,7 +40,7 @@ var mentorObj = [
         "domain": "Tech",
         "about": "Product at UBER | Previously at - Blinkit, upGrad",
         "img": "../../img/industryExperts-4.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-4.svg",
+        "mobileImg": "../../img/mobileIndustryExperts-4.webp",
         "linkedin": "https://www.linkedin.com/in/jitesh-goel/"
     },
 
@@ -49,7 +49,7 @@ var mentorObj = [
         "domain": "Fintech/Operations",
         "about": "Operating Partner - FinTech | Chief Innovation Officer - Payswiff",
         "img": "../../img/industryExperts-5.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-5.svg",
+        "mobileImg": "../../img/mobileIndustryExperts-5.webp",
         "linkedin": "https://www.linkedin.com/in/vikrant-khorana-ba61a42/"
     },
 
@@ -58,7 +58,7 @@ var mentorObj = [
         "domain": "Finance",
         "about": "Author of All About FP&A | Blogger | Content Creator | Ex Citi & EY | Chartered Accountant",
         "img": "../../img/industryExperts-6.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-6.svg",
+        "mobileImg": "../../img/mobileIndustryExperts-6.webp",
         "linkedin": "https://www.linkedin.com/in/asifmasani/"
     },
 
@@ -67,7 +67,7 @@ var mentorObj = [
         "domain": "Sales,Marketing,Strategy",
         "about": "Specialist in the Consumer and Retail space | Ex CMO - Epigamia",
         "img": "../../img/industryExperts-7.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-7.svg",
+        "mobileImg": "../../img/mobileIndustryExperts-7.webp",
         "linkedin": "https://www.linkedin.com/in/siddarthmenon/"
     }
 ]
@@ -121,7 +121,7 @@ function createMentorCard(mentorObj) {
                         <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
                             <span
                                 class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
-                            <a href="${mentorObj[i].linkedin}"><img src="../../img/masterLinkedin.png"
+                            <a href="${mentorObj[i].linkedin}" target="_blank"><img src="../../img/masterLinkedin.png"
                                     target="_blank" class="mentorLinked"></a>
                         </div>
                         
@@ -175,7 +175,7 @@ function createMentorCard(mentorObj) {
                         <div class="flex items-end md:justify-start justify-center gap-x-3 mb-3">
                             <span
                                 class="mentorName font-bold text-2xl text-main">${mentorObj[i].name}</span>
-                            <a href="${mentorObj[i].linkedin}"><img src="../../img/masterLinkedin.png"
+                            <a href="${mentorObj[i].linkedin}" target="_blank"><img src="../../img/masterLinkedin.png"
                                     target="_blank" class="mentorLinked"></a>
                         </div>
                         

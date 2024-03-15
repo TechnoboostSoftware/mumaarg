@@ -159,6 +159,10 @@
     background-image: url('img/newMaster.webp');
     background-size: cover;
 }
+.industryMentors {
+    background-image: url('img/banner.svg');
+    background-size: cover;
+}
 
 .dropImg {
     height: 10px;
