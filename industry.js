@@ -5,6 +5,7 @@ var mentorObj = [
         "about": "Chief Marketing Officer - Modi Naturals | 14+ Years in Consumer Business | Digital Evangelist | Award-Winning Marketer | Speaker & Mentor | Fueling Growth through Ideas and Storytelling.",
         "img": "../../img/industryExperts-0.svg",
         "mobileImg": "../../img/mobileIndustryExperts-0.webp",
+        "calendarLink": "https://calendly.com/mukesh_ghuraiya/pgp-rise-aspirants?guests=mastersunion@mymaarg.com",
         "linkedin": "https://www.linkedin.com/in/mukeshghuraiya/"
     },
 
@@ -14,6 +15,7 @@ var mentorObj = [
         "about": "Founder @ Havish M Consulting | Harvard Online Data Science | 40u40 Analytics | Faculty at IMT Ghaziabad, Masters' Union and SRCC | ET Masterclass Instructor | AuthorX20 | MOS MCT MCDA",
         "img": "../../img/industryExperts-1.svg",
         "mobileImg": "../../img/mobileIndustryExperts-1.webp",
+        "calendarLink": "",
         "linkedin": "https://www.linkedin.com/in/havishm/"
     },
 
@@ -23,6 +25,7 @@ var mentorObj = [
         "about": "Lead Product Manager- Expedia group | ex-Zomato| IIT Roorkee | Product Mentor",
         "img": "../../img/industryExperts-2.svg",
         "mobileImg": "../../img/mobileIndustryExperts-2.webp",
+        "calendarLink": "https://calendly.com/chandra-animesh18/30min?guests=mastersunion@mymaarg.com",
         "linkedin": "https://www.linkedin.com/in/animeshchandra/"
     },
 
@@ -32,6 +35,7 @@ var mentorObj = [
         "about": "Head of Growth - White.Inc | Ex-FilterCopy, PayTm, Jupiter, Betterhalf",
         "img": "../../img/industryExperts-3.svg",
         "mobileImg": "../../img/mobileIndustryExperts-3.webp",
+        "calendarLink": "",
         "linkedin": "https://www.linkedin.com/in/sindhubiswal/"
     },
 
@@ -41,6 +45,7 @@ var mentorObj = [
         "about": "Product at UBER | Previously at - Blinkit, upGrad",
         "img": "../../img/industryExperts-4.svg",
         "mobileImg": "../../img/mobileIndustryExperts-4.webp",
+        "calendarLink": "https://calendly.com/jiteshgoel/60min?guests=mastersunion@mymaarg.com",
         "linkedin": "https://www.linkedin.com/in/jitesh-goel/"
     },
 
@@ -50,6 +55,7 @@ var mentorObj = [
         "about": "Operating Partner - FinTech | Chief Innovation Officer - Payswiff",
         "img": "../../img/industryExperts-5.svg",
         "mobileImg": "../../img/mobileIndustryExperts-5.webp",
+        "calendarLink": "",
         "linkedin": "https://www.linkedin.com/in/vikrant-khorana-ba61a42/"
     },
 
@@ -59,6 +65,7 @@ var mentorObj = [
         "about": "Author of All About FP&A | Blogger | Content Creator | Ex Citi & EY | Chartered Accountant",
         "img": "../../img/industryExperts-6.svg",
         "mobileImg": "../../img/mobileIndustryExperts-6.webp",
+        "calendarLink": "",
         "linkedin": "https://www.linkedin.com/in/asifmasani/"
     },
 
@@ -68,6 +75,7 @@ var mentorObj = [
         "about": "Specialist in the Consumer and Retail space | Ex CMO - Epigamia",
         "img": "../../img/industryExperts-7.svg",
         "mobileImg": "../../img/mobileIndustryExperts-7.webp",
+        "calendarLink": "",
         "linkedin": "https://www.linkedin.com/in/siddarthmenon/"
     }
 ]
@@ -147,7 +155,7 @@ function createMentorCard(mentorObj) {
                     </div>
                     <div class="">
                         <div class="md:mt-5 m-0">
-                            <a href="javascript:;"
+                            <a href="javascript:;" onclick="openCalendar('${mentorObj[i].calendarLink}')"
                                 class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
                                 <span>Book Now</span></a>
                         </div>
@@ -204,9 +212,9 @@ function createMentorCard(mentorObj) {
                     </div>
                     <div class="">
                         <div class="md:mt-5 m-0">
-                            <a href="javascript:;"
-                                class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
-                                <span>Book Now</span></a>
+                        <a href="javascript:;" onclick="openCalendar('${mentorObj[i].calendarLink}')"
+                        class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
+                        <span>Book Now</span></a>
                         </div>
                     </div>
 
@@ -308,11 +316,11 @@ function mobileFilterDisplay(id) {
     $(id).toggleClass('hidden')
 }
 
-// function openCalendar(calendarLink) {
-//     if (calendarLink == "") {
-//         alert("Something went wrong ! please try after sometime")
-//     } else {
-//         Calendly.initPopupWidget({ url: calendarLink })
-//     }
+function openCalendar(calendarLink) {
+    if (calendarLink == "") {
+        alert("Something went wrong ! please try after sometime")
+    } else {
+        Calendly.initPopupWidget({ url: calendarLink })
+    }
 
-// }
+}
