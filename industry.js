@@ -157,7 +157,7 @@ function createMentorCard(mentorObj) {
                         <div class="md:mt-5 m-0">
                             <a href="javascript:;" onclick="openCalendar('${mentorObj[i].calendarLink}')"
                                 class="w-full flex items-center justify-center text-sm text-white btn-Bg font-semibold py-2 text-center rounded-lg">
-                                <span>Book Now</span></a>
+                                <span>Book Now</span> </a>
                         </div>
                     </div>
 
