@@ -9,15 +9,15 @@ var mentorObj = [
         "linkedin": "https://www.linkedin.com/in/mukeshghuraiya/"
     },
 
-    {
-        "name": "Havish Madhvapaty",
-        "domain": "Consulting",
-        "about": "Founder @ Havish M Consulting | Harvard Online Data Science | 40u40 Analytics | Faculty at IMT Ghaziabad, Masters' Union and SRCC | ET Masterclass Instructor | AuthorX20 | MOS MCT MCDA",
-        "img": "../../img/industryExperts-1.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-1.webp",
-        "calendarLink": "",
-        "linkedin": "https://www.linkedin.com/in/havishm/"
-    },
+    // {
+    //     "name": "Havish Madhvapaty",
+    //     "domain": "Consulting",
+    //     "about": "Founder @ Havish M Consulting | Harvard Online Data Science | 40u40 Analytics | Faculty at IMT Ghaziabad, Masters' Union and SRCC | ET Masterclass Instructor | AuthorX20 | MOS MCT MCDA",
+    //     "img": "../../img/industryExperts-1.svg",
+    //     "mobileImg": "../../img/mobileIndustryExperts-1.webp",
+    //     "calendarLink": "",
+    //     "linkedin": "https://www.linkedin.com/in/havishm/"
+    // },
 
     {
         "name": "Animesh Chandra",
@@ -29,15 +29,15 @@ var mentorObj = [
         "linkedin": "https://www.linkedin.com/in/animeshchandra/"
     },
 
-    {
-        "name": "Sindhu Biswal",
-        "domain": "Digital/Growth Marketing",
-        "about": "Head of Growth - White.Inc | Ex-FilterCopy, PayTm, Jupiter, Betterhalf",
-        "img": "../../img/industryExperts-3.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-3.webp",
-        "calendarLink": "",
-        "linkedin": "https://www.linkedin.com/in/sindhubiswal/"
-    },
+    // {
+    //     "name": "Sindhu Biswal",
+    //     "domain": "Digital/Growth Marketing",
+    //     "about": "Head of Growth - White.Inc | Ex-FilterCopy, PayTm, Jupiter, Betterhalf",
+    //     "img": "../../img/industryExperts-3.svg",
+    //     "mobileImg": "../../img/mobileIndustryExperts-3.webp",
+    //     "calendarLink": "",
+    //     "linkedin": "https://www.linkedin.com/in/sindhubiswal/"
+    // },
 
     {
         "name": "Jitesh Goel",
@@ -49,25 +49,25 @@ var mentorObj = [
         "linkedin": "https://www.linkedin.com/in/jitesh-goel/"
     },
 
-    {
-        "name": "Vikrant Khorana",
-        "domain": "Fintech/Operations",
-        "about": "Operating Partner - FinTech | Chief Innovation Officer - Payswiff",
-        "img": "../../img/industryExperts-5.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-5.webp",
-        "calendarLink": "",
-        "linkedin": "https://www.linkedin.com/in/vikrant-khorana-ba61a42/"
-    },
+    // {
+    //     "name": "Vikrant Khorana",
+    //     "domain": "Fintech/Operations",
+    //     "about": "Operating Partner - FinTech | Chief Innovation Officer - Payswiff",
+    //     "img": "../../img/industryExperts-5.svg",
+    //     "mobileImg": "../../img/mobileIndustryExperts-5.webp",
+    //     "calendarLink": "",
+    //     "linkedin": "https://www.linkedin.com/in/vikrant-khorana-ba61a42/"
+    // },
 
-    {
-        "name": "Asif Masani",
-        "domain": "Finance",
-        "about": "Author of All About FP&A | Blogger | Content Creator | Ex Citi & EY | Chartered Accountant",
-        "img": "../../img/industryExperts-6.svg",
-        "mobileImg": "../../img/mobileIndustryExperts-6.webp",
-        "calendarLink": "",
-        "linkedin": "https://www.linkedin.com/in/asifmasani/"
-    },
+    // {
+    //     "name": "Asif Masani",
+    //     "domain": "Finance",
+    //     "about": "Author of All About FP&A | Blogger | Content Creator | Ex Citi & EY | Chartered Accountant",
+    //     "img": "../../img/industryExperts-6.svg",
+    //     "mobileImg": "../../img/mobileIndustryExperts-6.webp",
+    //     "calendarLink": "",
+    //     "linkedin": "https://www.linkedin.com/in/asifmasani/"
+    // },
 
     {
         "name": "Siddharth Menon",
@@ -75,13 +75,13 @@ var mentorObj = [
         "about": "Specialist in the Consumer and Retail space | Ex CMO - Epigamia",
         "img": "../../img/industryExperts-7.svg",
         "mobileImg": "../../img/mobileIndustryExperts-7.webp",
-        "calendarLink": "",
+        "calendarLink": "https://calendly.com/siddrmenon/30min?guests=mastersunion@mymaarg.com",
         "linkedin": "https://www.linkedin.com/in/siddarthmenon/"
     }
 ]
 
 
-var mentorsOrder = [0, 1, 2, 3, 4, 5, 6, 7]
+var mentorsOrder = [0, 1, 2, 3]
 $(document).ready(function () {
     initilise();
 })
