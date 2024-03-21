@@ -9,15 +9,15 @@ var mentorObj = [
         "linkedin": "https://www.linkedin.com/in/mukeshghuraiya/"
     },
 
-    // {
-    //     "name": "Havish Madhvapaty",
-    //     "domain": "Consulting",
-    //     "about": "Founder @ Havish M Consulting | Harvard Online Data Science | 40u40 Analytics | Faculty at IMT Ghaziabad, Masters' Union and SRCC | ET Masterclass Instructor | AuthorX20 | MOS MCT MCDA",
-    //     "img": "../../img/industryExperts-1.svg",
-    //     "mobileImg": "../../img/mobileIndustryExperts-1.webp",
-    //     "calendarLink": "",
-    //     "linkedin": "https://www.linkedin.com/in/havishm/"
-    // },
+    {
+        "name": "Havish Madhvapaty",
+        "domain": "Consulting",
+        "about": "Founder @ Havish M Consulting | Harvard Online Data Science | 40u40 Analytics | Faculty at IMT Ghaziabad, Masters' Union and SRCC | ET Masterclass Instructor | AuthorX20 | MOS MCT MCDA",
+        "img": "../../img/industryExperts-1.svg",
+        "mobileImg": "../../img/mobileIndustryExperts-1.webp",
+        "calendarLink": "https://calendly.com/havish_madhvapaty/30min?guests=mastersunion@mymaarg.com",
+        "linkedin": "https://www.linkedin.com/in/havishm/"
+    },
 
     {
         "name": "Animesh Chandra",
@@ -81,7 +81,7 @@ var mentorObj = [
 ]
 
 
-var mentorsOrder = [0, 1, 2, 3]
+var mentorsOrder = [0, 1, 2, 3, 4]
 $(document).ready(function () {
     initilise();
 })
