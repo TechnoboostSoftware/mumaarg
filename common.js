@@ -77,7 +77,7 @@ var mentorObj = [
         // "course": "B.Tech",
         "college": "Chaitanya Bharti Institute of Technology",
         "linkedInUrl": "https://www.linkedin.com/in/ajaykumarsunnapu/",
-        "calendarLink": "https://calendly.com/ajaykumarsunnapu/1-1-sync-up",
+        "calendarLink": "https://calendly.com/ajaykumarsunnapu/1-on-1-sync",
         "img": "../../img/newMentorPic-3.webp",
         "mobileImg": "../../img/newMentorMobile-3.webp",
         "ComapniesAndroles": [
